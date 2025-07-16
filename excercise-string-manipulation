@@ -38,10 +38,39 @@ string_length = len(long_village_name)
 print(string_length)
 
 #Question5
-my_path = "/c/Users/instructor/Downloads/Submit Relating the Nonrelational Assessment Download May 10, 2021 917 AM"
-my_folders = my_path
+my_path = ' /c/Users/instructor/Downloads/Submit Relating the Nonrelational Assessment Download May 10, 2021 917 AM '
+my_folders = my_path.strip().split("/")
 print(my_folders)
 
 #Question6
-composers = "Beethoven,Ludwig von;Liszt,Franz;Mozart,Wolfgang;Copland,Aaron"
-composers_split = composers.split(;)
+composers="Beethoven,Ludwig von;Liszt,Franz;Mozart,Wolfgang;Copland,Aaron"
+composers = composers.replace('Mozrt, Wolfgang', 'Wolfgang Mozart')
+print(composers)
+
+# Separate the composers
+composers_split = composers.split(";")
+print(composers_split)
+
+# Get the third composer
+third_composer = composers_split[2]
+print(third_composer)
+
+# Find the comma in the name
+comma_position = third_composer.find(",")
+print(comma_position)
+
+# Join the names to get the 3rd composer's name in "first last" format
+first_name = "Wolfgang"
+last_name = "Mozart"
+full_name = first_name + last_name
+print(f"{first_name} {last_name}")
+print(full_name)
+
+#Question7
+left_padded = '           Operators are standing by'
+right_padded = 'Call now           '
+
+# Combine cleaned strings with "!" in the middle
+message = right_padded.rstrip() + '! ' + left_padded.lstrip()
+
+print(message)
