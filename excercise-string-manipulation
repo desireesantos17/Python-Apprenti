@@ -38,6 +38,10 @@ string_length = len(long_village_name)
 print(string_length)
 
 #Question5
-my_path = ' /c/Users/instructor/Downloads/Submit Relating the Nonrelational Assessment Download May 10, 2021 917 AM
-my_folders = my_path.strip() '
+my_path = "/c/Users/instructor/Downloads/Submit Relating the Nonrelational Assessment Download May 10, 2021 917 AM"
+my_folders = my_path
 print(my_folders)
+
+#Question6
+composers = "Beethoven,Ludwig von;Liszt,Franz;Mozart,Wolfgang;Copland,Aaron"
+composers_split = composers.split(;)
